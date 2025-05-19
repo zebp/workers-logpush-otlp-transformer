@@ -1,0 +1,9 @@
+# If present, any request to transform logs will require this
+# as the authorization header
+AUTHORIZATION=some-secret-value
+
+# Where OTLP logs are exported to
+DESTINATION=http://destination.com/
+
+# Any aditional headers you want to send to your OTLP destination can be via
+# DESTINATION_HEADER_(header_name)=value

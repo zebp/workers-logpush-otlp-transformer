@@ -1,0 +1,37 @@
+{
+	"name": "workers-logpush-otlp-transformer",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types",
+		"lint": "eslint",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.30",
+		"@eslint/js": "^9.27.0",
+		"@types/node": "^22.15.19",
+		"eslint": "^9.27.0",
+		"globals": "^16.1.0",
+		"prettier": "3.5.3",
+		"typescript": "^5.5.2",
+		"typescript-eslint": "^8.32.1",
+		"vitest": "~3.0.7",
+		"wrangler": "^4.15.2"
+	},
+	"dependencies": {
+		"@opentelemetry/api": "^1.9.0",
+		"@opentelemetry/api-logs": "^0.201.1",
+		"@opentelemetry/core": "^2.0.1",
+		"@opentelemetry/exporter-logs-otlp-http": "^0.201.1",
+		"@opentelemetry/otlp-transformer": "^0.201.1",
+		"@opentelemetry/resources": "^2.0.1",
+		"@opentelemetry/sdk-logs": "^0.201.1",
+		"@opentelemetry/sdk-trace-base": "^2.0.1",
+		"hono": "^4.7.10"
+	}
+}
